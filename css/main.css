@@ -2310,4 +2310,19 @@ body {
   /* 27px / 16px */
 }
 
+a:link, a:active, a:focus, a:visited {
+  color: #39CCCC;
+  font-weight: 400;
+  text-decoration: none;
+  border-bottom: 1px solid #f0f0f0;
+  -webkit-transition: border-bottom 0.5s ease;
+  -moz-transition: border-bottom 0.5s ease;
+  -o-transition: border-bottom 0.5s ease;
+  transition: border-bottom 0.5s ease;
+}
+
+a:hover {
+  border-bottom-color: #39CCCC;
+}
+
 /*# sourceMappingURL=main.css.map */
