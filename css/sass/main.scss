@@ -32,9 +32,15 @@ p {
         @include transition(border-bottom);
     }
 
-    a:hover {
+    #{$a-tags-hover} {
         border-bottom-color: $color-link;
     }
+}
+
+// Card
+
+#card {
+    margin: 40px 20px 20px 20px;
 }
 
 // Header
@@ -49,7 +55,7 @@ p {
 h1 {
     font-size: 1.75em; /* 28px / 16px */
     letter-spacing: 1px;
-    margin: 10px 0;
+    margin: 15px 0 20px 0;
     
     #{$a-tags} {
         color: $color-main;
@@ -60,6 +66,7 @@ h1 {
 
 ul.social {
     width: 100%;
+    font-size: 1.125em; /* 18px / 16px */
     
     li {
         display: inline-block;
@@ -69,12 +76,20 @@ ul.social {
             display: inline-block;
             height: 50px;
             width: 100%;
-            line-height: 50px;
-            
-            &:hover {
-                color: #fff;
-                background-color: $color-link;
-            }
+            line-height: 50px;   
         }
+        
+        #{$a-tags-hover} {
+            color: #fff;
+            background-color: $color-link;
+        }
+    }
+}
+
+footer {
+    background-color: #fafafa;
+    
+    p {
+        padding: 20px 30px;
     }
 }

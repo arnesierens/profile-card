@@ -2310,7 +2310,7 @@ body {
   /* 28px / 16px */
 }
 
-a, a:link, a:active, a:visited, a:focus {
+a, a:link, a:visited, a:focus {
   color: #39cccc;
   font-weight: 400;
   text-decoration: none;
@@ -2319,15 +2319,19 @@ a, a:link, a:active, a:visited, a:focus {
 p {
   padding-bottom: 20px;
 }
-p a, p a:link, p a:active, p a:visited, p a:focus {
+p a, p a:link, p a:visited, p a:focus {
   border-bottom: 1px solid #f0f0f0;
   -webkit-transition: border-bottom 0.5s ease;
   -moz-transition: border-bottom 0.5s ease;
   -o-transition: border-bottom 0.5s ease;
   transition: border-bottom 0.5s ease;
 }
-p a:hover {
+p a:hover, p a:active {
   border-bottom-color: #39cccc;
+}
+
+#card {
+  margin: 40px 20px 20px 20px;
 }
 
 #avatar {
@@ -2345,14 +2349,16 @@ h1 {
   font-size: 1.75em;
   /* 28px / 16px */
   letter-spacing: 1px;
-  margin: 10px 0;
+  margin: 15px 0 20px 0;
 }
-h1 a, h1 a:link, h1 a:active, h1 a:visited, h1 a:focus {
+h1 a, h1 a:link, h1 a:visited, h1 a:focus {
   color: #181810;
 }
 
 ul.social {
   width: 100%;
+  font-size: 1.125em;
+  /* 18px / 16px */
 }
 ul.social li {
   display: inline-block;
@@ -2364,9 +2370,16 @@ ul.social li a {
   width: 100%;
   line-height: 50px;
 }
-ul.social li a:hover {
+ul.social li a:hover, ul.social li a:active {
   color: #fff;
   background-color: #39cccc;
+}
+
+footer {
+  background-color: #fafafa;
+}
+footer p {
+  padding: 20px 30px;
 }
 
 /*# sourceMappingURL=main.css.map */
