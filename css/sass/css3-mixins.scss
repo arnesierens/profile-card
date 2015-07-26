@@ -6,6 +6,12 @@
           border-radius: $radius;
 }
 
+@mixin shadow($x, $y, $blur, $spread, $color) {
+  -webkit-box-shadow: $x $y $blur $spread $color;
+     -moz-box-shadow: $x $y $blur $spread $color;
+          box-shadow: $x $y $blur $spread $color;
+}
+
 @mixin transition($property) {
   -webkit-transition: $property .5s ease;
      -moz-transition: $property .5s ease;
