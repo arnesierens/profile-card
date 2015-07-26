@@ -1,0 +1,19 @@
+// Import other files
+
+@import 'reset';
+@import 'variables';
+@import 'css3-mixins';
+@import 'font-awesome.min';
+
+// General
+
+html {
+    height: 100%;
+}
+
+body {
+    font: 300 100% $font;
+    color: $color-main;
+    text-align: center;
+    line-height: 1.6875em; /* 27px / 16px */
+}
