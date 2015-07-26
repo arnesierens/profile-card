@@ -2314,14 +2314,19 @@ a, a:link, a:active, a:visited, a:focus {
   color: #39cccc;
   font-weight: 400;
   text-decoration: none;
+}
+
+p {
+  padding-bottom: 20px;
+}
+p a, p a:link, p a:active, p a:visited, p a:focus {
   border-bottom: 1px solid #f0f0f0;
   -webkit-transition: border-bottom 0.5s ease;
   -moz-transition: border-bottom 0.5s ease;
   -o-transition: border-bottom 0.5s ease;
   transition: border-bottom 0.5s ease;
 }
-
-a:hover {
+p a:hover {
   border-bottom-color: #39cccc;
 }
 
@@ -2344,7 +2349,24 @@ h1 {
 }
 h1 a, h1 a:link, h1 a:active, h1 a:visited, h1 a:focus {
   color: #181810;
-  border: 0;
+}
+
+ul.social {
+  width: 100%;
+}
+ul.social li {
+  display: inline-block;
+  width: 20%;
+}
+ul.social li a {
+  display: inline-block;
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+}
+ul.social li a:hover {
+  color: #fff;
+  background-color: #39cccc;
 }
 
 /*# sourceMappingURL=main.css.map */

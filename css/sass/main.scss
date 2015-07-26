@@ -18,18 +18,23 @@ body {
     line-height: 1.75em; /* 28px / 16px */
 }
 
-// Links
-
 #{$a-tags} {
     color: $color-link;
     font-weight: 400;
     text-decoration: none;
-    border-bottom: 1px solid $color-border;
-    @include transition(border-bottom);
 }
 
-a:hover {
-    border-bottom-color: $color-link;
+p {
+    padding-bottom: 20px;
+    
+    #{$a-tags} {
+        border-bottom: 1px solid $color-border;
+        @include transition(border-bottom);
+    }
+
+    a:hover {
+        border-bottom-color: $color-link;
+    }
 }
 
 // Header
@@ -48,6 +53,28 @@ h1 {
     
     #{$a-tags} {
         color: $color-main;
-        border: 0;
+    }
+}
+
+// Social
+
+ul.social {
+    width: 100%;
+    
+    li {
+        display: inline-block;
+        width: 20%;
+        
+        a {
+            display: inline-block;
+            height: 50px;
+            width: 100%;
+            line-height: 50px;
+            
+            &:hover {
+                color: #fff;
+                background-color: $color-link;
+            }
+        }
     }
 }
