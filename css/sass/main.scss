@@ -37,7 +37,18 @@ p {
     }
     
     @include responsive(medium-screens) {
-        padding: 0 30px 20px 30px;
+        padding: 0 40px 40px 40px;
+    }
+}
+
+// Particles
+#particles-js {
+    @include responsive(medium-screens) {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        background-color: $color-bg;
+        z-index: -10;
     }
 }
 
@@ -46,12 +57,12 @@ p {
 #wrapper {
     @include responsive(medium-screens) {
         box-sizing: border-box;
-        width: 400px;
-        height: 373px;
+        width: $width-medium;
+        height: 435px;
         position: absolute;
         top: 50%;
         left: 50%;
-        margin: -186.5px 0 0 -200px;
+        margin: -193.5px 0 0 -200px;
     }
 }
 
@@ -62,10 +73,18 @@ p {
     
     @include responsive(medium-screens) {
         margin: 0;
+        background-color: #fff;
+        border: 1px solid $color-border;
     }
 }
 
 // Header
+
+header {
+    @include responsive(medium-screens) {
+        padding-top: 40px;
+    }
+}
 
 #avatar {
     width: 100px;
@@ -98,7 +117,12 @@ ul.social {
             display: inline-block;
             height: 50px;
             width: 100%;
-            line-height: 50px;   
+            line-height: 50px;
+            
+            @include responsive(medium-screens) {
+                height: 60px;
+                line-height: 60px;
+            }
         }
         
         #{$a-tags-hover} {
@@ -109,10 +133,11 @@ ul.social {
 }
 
 footer {
-    background-color: #fafafa;
+    background-color: $color-bg;
     
     p {
-        padding: 20px 30px;  
+        padding: 20px 30px;
+        font-size: 0.875em; /* 14px / 16px */
     }
     
     @include responsive(medium-screens) {

@@ -33,6 +33,7 @@ table {
   border-spacing: 0;
 }
 
+/*$color-bg-2: #254073;*/
 /*!
  *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2329,30 +2330,48 @@ p a, p a:link, p a:visited, p a:focus {
 p a:hover, p a:active {
   border-bottom-color: #39cccc;
 }
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 410px) {
   p {
-    padding: 0 30px 20px 30px;
+    padding: 0 40px 40px 40px;
   }
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 410px) {
+  #particles-js {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: #fafafa;
+    z-index: -10;
+  }
+}
+
+@media only screen and (min-width: 410px) {
   #wrapper {
     box-sizing: border-box;
-    width: 400px;
-    height: 373px;
+    width: 410px;
+    height: 435px;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin: -186.5px 0 0 -200px;
+    margin: -193.5px 0 0 -200px;
   }
 }
 
 #card {
   margin: 40px 20px 20px 20px;
 }
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 410px) {
   #card {
     margin: 0;
+    background-color: #fff;
+    border: 1px solid #f0f0f0;
+  }
+}
+
+@media only screen and (min-width: 410px) {
+  header {
+    padding-top: 40px;
   }
 }
 
@@ -2392,6 +2411,12 @@ ul.social li a {
   width: 100%;
   line-height: 50px;
 }
+@media only screen and (min-width: 410px) {
+  ul.social li a {
+    height: 60px;
+    line-height: 60px;
+  }
+}
 ul.social li a:hover, ul.social li a:active {
   color: #fff;
   background-color: #39cccc;
@@ -2402,8 +2427,10 @@ footer {
 }
 footer p {
   padding: 20px 30px;
+  font-size: 0.875em;
+  /* 14px / 16px */
 }
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 410px) {
   footer {
     background-color: transparent;
   }
