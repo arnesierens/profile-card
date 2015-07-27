@@ -9,7 +9,7 @@ if (document.documentElement.clientWidth > 400) {
                 }
             },
             "color": {
-                "value": "#cccccc"
+                "value": "#bbbbbb"
             },
             "shape": {
                 "type": "circle",
@@ -49,7 +49,7 @@ if (document.documentElement.clientWidth > 400) {
             "line_linked": {
                 "enable": true,
                 "distance": 150,
-                "color": "#cccccc",
+                "color": "#bbbbbb",
                 "opacity": 0.4,
                 "width": 1
             },
