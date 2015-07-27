@@ -1,4 +1,4 @@
-if (document.documentElement.clientWidth > 400) {
+if (document.documentElement.clientWidth > 410) {
     particlesJS("particles-js", {
         "particles": {
             "number": {
