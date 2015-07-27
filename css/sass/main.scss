@@ -29,7 +29,7 @@ p {
     
     #{$a-tags} {
         border-bottom: 1px solid $color-border;
-        @include transition(border-bottom);
+        @include transition(border-bottom, 0.5s);
     }
 
     #{$a-tags-hover} {
@@ -118,6 +118,7 @@ ul.social {
             height: 50px;
             width: 100%;
             line-height: 50px;
+            @include transition(background-color, 0.5s);
             
             @include responsive(medium-screens) {
                 height: 60px;
