@@ -37,7 +37,7 @@ p {
     }
     
     @include responsive(medium-screens) {
-        padding: 0 40px 40px 40px;
+        padding: 0 40px 60px 40px;
     }
 }
 
@@ -83,7 +83,7 @@ p {
 
 header {
     @include responsive(medium-screens) {
-        padding-top: 40px;
+        padding-top: 60px;
     }
 }
 
@@ -109,6 +109,7 @@ h1 {
 ul.social {
     width: 100%;
     font-size: 1.125em; /* 18px / 16px */
+    border-top: 1px solid $color-border;
     
     li {
         display: inline-block;
@@ -121,8 +122,8 @@ ul.social {
             line-height: 50px;
             
             @include responsive(medium-screens) {
-                height: 60px;
-                line-height: 60px;
+                height: 62px;
+                line-height: 62px;
             }
         }
         

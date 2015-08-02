@@ -2330,13 +2330,13 @@ p a, p a:link, p a:visited, p a:focus {
 p a:hover, p a:active {
   border-bottom-color: #39cccc;
 }
-@media only screen and (min-width: 410px) {
+@media only screen and (min-width: 412px) {
   p {
-    padding: 0 40px 40px 40px;
+    padding: 0 40px 60px 40px;
   }
 }
 
-@media only screen and (min-width: 410px) {
+@media only screen and (min-width: 412px) {
   #particles-js {
     height: 100%;
     width: 100%;
@@ -2346,10 +2346,10 @@ p a:hover, p a:active {
   }
 }
 
-@media only screen and (min-width: 410px) {
+@media only screen and (min-width: 412px) {
   #wrapper {
     box-sizing: border-box;
-    width: 410px;
+    width: 412px;
     height: 435px;
     position: absolute;
     top: 50%;
@@ -2361,7 +2361,7 @@ p a:hover, p a:active {
 #card {
   margin: 40px 20px 20px 20px;
 }
-@media only screen and (min-width: 410px) {
+@media only screen and (min-width: 412px) {
   #card {
     margin: 0;
     background-color: #fff;
@@ -2372,9 +2372,9 @@ p a:hover, p a:active {
   }
 }
 
-@media only screen and (min-width: 410px) {
+@media only screen and (min-width: 412px) {
   header {
-    padding-top: 40px;
+    padding-top: 60px;
   }
 }
 
@@ -2403,6 +2403,7 @@ ul.social {
   width: 100%;
   font-size: 1.125em;
   /* 18px / 16px */
+  border-top: 1px solid #f0f0f0;
 }
 ul.social li {
   display: inline-block;
@@ -2414,10 +2415,10 @@ ul.social li a {
   width: 100%;
   line-height: 50px;
 }
-@media only screen and (min-width: 410px) {
+@media only screen and (min-width: 412px) {
   ul.social li a {
-    height: 60px;
-    line-height: 60px;
+    height: 62px;
+    line-height: 62px;
   }
 }
 ul.social li a:hover, ul.social li a:active {
@@ -2443,7 +2444,7 @@ footer p {
   font-size: 0.875em;
   /* 14px / 16px */
 }
-@media only screen and (min-width: 410px) {
+@media only screen and (min-width: 412px) {
   footer {
     background-color: transparent;
   }
