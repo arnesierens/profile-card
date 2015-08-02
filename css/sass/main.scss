@@ -58,11 +58,11 @@ p {
     @include responsive(medium-screens) {
         box-sizing: border-box;
         width: $width-medium;
-        height: 435px;
+        height: 488px;
         position: absolute;
         top: 50%;
         left: 50%;
-        margin: -198.5px 0 0 -205px;
+        margin: -220px 0 0 -205px;
     }
 }
 
