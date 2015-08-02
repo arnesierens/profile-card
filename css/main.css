@@ -2366,6 +2366,9 @@ p a:hover, p a:active {
     margin: 0;
     background-color: #fff;
     border: 1px solid #f0f0f0;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
   }
 }
 
@@ -2378,9 +2381,9 @@ p a:hover, p a:active {
 #avatar {
   width: 100px;
   height: 100px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
+  -webkit-border-radius: 50% 50% 50% 50%;
+  -moz-border-radius: 50% 50% 50% 50%;
+  border-radius: 50% 50% 50% 50%;
   -webkit-box-shadow: 0px 0px 1px 0px #aaa;
   -moz-box-shadow: 0px 0px 1px 0px #aaa;
   box-shadow: 0px 0px 1px 0px #aaa;
@@ -2424,6 +2427,16 @@ ul.social li a {
 ul.social li a:hover, ul.social li a:active {
   color: #fff;
   background-color: #39cccc;
+}
+ul.social li.social-first a {
+  -webkit-border-radius: 0 0 0 3px;
+  -moz-border-radius: 0 0 0 3px;
+  border-radius: 0 0 0 3px;
+}
+ul.social li.social-last a {
+  -webkit-border-radius: 0 0 3px 0;
+  -moz-border-radius: 0 0 3px 0;
+  border-radius: 0 0 3px 0;
 }
 
 footer {
