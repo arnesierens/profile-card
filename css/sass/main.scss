@@ -25,7 +25,7 @@ body {
 }
 
 p {
-    padding-bottom: 20px;
+    padding-bottom: 25px;
     
     #{$a-tags} {
         border-bottom: 1px solid $color-border;
@@ -37,7 +37,7 @@ p {
     }
     
     @include responsive(medium-screens) {
-        padding: 0 40px 60px 40px;
+        padding: 0 40px 54px 40px;
     }
 }
 
@@ -57,25 +57,25 @@ p {
 #wrapper {
     @include responsive(medium-screens) {
         box-sizing: border-box;
-        width: $width-medium;
+        width: 412px;
         height: 488px;
         position: absolute;
         top: 50%;
         left: 50%;
-        margin: -220px 0 0 -205px;
+        margin: -219.5px 0 0 -206px; /* 439 / 2 & 412 / 2 (height card & width card) */
     }
 }
 
 // Card
 
 #card {
-    margin: 40px 20px 20px 20px;
+    margin: 60px 20px 31px 20px;
     
     @include responsive(medium-screens) {
         margin: 0;
         background-color: #fff;
         border: 1px solid $color-border;
-        @include rounded(3px, 3px, 3px, 3px);
+        @include rounded(5px, 5px, 5px, 5px);
     }
 }
 
@@ -97,7 +97,7 @@ header {
 h1 {
     font-size: 1.75em; /* 28px / 16px */
     letter-spacing: 1px;
-    padding: 15px 0 20px 0;
+    padding: 15px 0 25px 0;
     
     #{$a-tags} {
         color: $color-main;
@@ -109,7 +109,18 @@ h1 {
 ul.social {
     width: 100%;
     font-size: 1.125em; /* 18px / 16px */
-    border-top: 1px solid $color-border;
+    
+    @include responsive(medium-screens) {
+        border-top: 1px solid $color-border;
+        
+        li.social-first a {
+            @include rounded(0, 0, 0, 5px);
+        }
+
+        li.social-last a {
+            @include rounded(0, 0, 5px, 0);
+        }
+    }
     
     li {
         display: inline-block;
@@ -132,29 +143,23 @@ ul.social {
             background-color: $color-link;
         }
     }
-    
-    li.social-first a {
-        @include rounded(0, 0, 0, 3px);
-    }
-    
-    li.social-last a {
-        @include rounded(0, 0, 3px, 0);
-    }
 }
 
 footer {
-    background-color: $color-bg;
+    
+    border-top: 1px solid $color-border;
     
     p {
-        padding: 20px 30px;
+        
+        padding: 25px 20px 54px;
         font-size: 0.875em; /* 14px / 16px */
     }
     
     @include responsive(medium-screens) {
-        background-color: transparent;
+        border-top: 0;
         
         p {
-            padding: 20px 30px 0 30px;
+            padding: 20px 40px 0 40px;
         }
     }
 }

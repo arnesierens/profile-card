@@ -2318,7 +2318,7 @@ a, a:link, a:visited, a:focus {
 }
 
 p {
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
 p a, p a:link, p a:visited, p a:focus {
   border-bottom: 1px solid #f0f0f0;
@@ -2332,7 +2332,7 @@ p a:hover, p a:active {
 }
 @media only screen and (min-width: 412px) {
   p {
-    padding: 0 40px 60px 40px;
+    padding: 0 40px 54px 40px;
   }
 }
 
@@ -2354,21 +2354,22 @@ p a:hover, p a:active {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin: -220px 0 0 -205px;
+    margin: -219.5px 0 0 -206px;
+    /* 439 / 2 & 412 / 2 (height card & width card) */
   }
 }
 
 #card {
-  margin: 40px 20px 20px 20px;
+  margin: 60px 20px 31px 20px;
 }
 @media only screen and (min-width: 412px) {
   #card {
     margin: 0;
     background-color: #fff;
     border: 1px solid #f0f0f0;
-    -webkit-border-radius: 3px 3px 3px 3px;
-    -moz-border-radius: 3px 3px 3px 3px;
-    border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
   }
 }
 
@@ -2393,7 +2394,7 @@ h1 {
   font-size: 1.75em;
   /* 28px / 16px */
   letter-spacing: 1px;
-  padding: 15px 0 20px 0;
+  padding: 15px 0 25px 0;
 }
 h1 a, h1 a:link, h1 a:visited, h1 a:focus {
   color: #181810;
@@ -2403,7 +2404,21 @@ ul.social {
   width: 100%;
   font-size: 1.125em;
   /* 18px / 16px */
-  border-top: 1px solid #f0f0f0;
+}
+@media only screen and (min-width: 412px) {
+  ul.social {
+    border-top: 1px solid #f0f0f0;
+  }
+  ul.social li.social-first a {
+    -webkit-border-radius: 0 0 0 5px;
+    -moz-border-radius: 0 0 0 5px;
+    border-radius: 0 0 0 5px;
+  }
+  ul.social li.social-last a {
+    -webkit-border-radius: 0 0 5px 0;
+    -moz-border-radius: 0 0 5px 0;
+    border-radius: 0 0 5px 0;
+  }
 }
 ul.social li {
   display: inline-block;
@@ -2425,31 +2440,21 @@ ul.social li a:hover, ul.social li a:active {
   color: #fff;
   background-color: #39cccc;
 }
-ul.social li.social-first a {
-  -webkit-border-radius: 0 0 0 3px;
-  -moz-border-radius: 0 0 0 3px;
-  border-radius: 0 0 0 3px;
-}
-ul.social li.social-last a {
-  -webkit-border-radius: 0 0 3px 0;
-  -moz-border-radius: 0 0 3px 0;
-  border-radius: 0 0 3px 0;
-}
 
 footer {
-  background-color: #fafafa;
+  border-top: 1px solid #f0f0f0;
 }
 footer p {
-  padding: 20px 30px;
+  padding: 25px 20px 54px;
   font-size: 0.875em;
   /* 14px / 16px */
 }
 @media only screen and (min-width: 412px) {
   footer {
-    background-color: transparent;
+    border-top: 0;
   }
   footer p {
-    padding: 20px 30px 0 30px;
+    padding: 20px 40px 0 40px;
   }
 }
 
