@@ -36,14 +36,14 @@ p {
         border-bottom-color: $color-link;
     }
     
-    @include responsive(medium-screens) {
+    @include responsive(width-or-height) {
         padding: 0 40px 54px 40px;
     }
 }
 
 // Particles
 #particles-js {
-    @include responsive(medium-screens) {
+    @include responsive(width-or-height) {
         height: 100%;
         width: 100%;
         position: fixed;
@@ -54,15 +54,28 @@ p {
 
 // Wrapper
 
-#wrapper {
-    @include responsive(medium-screens) {
+#wrapper { 
+    @include responsive(width-or-height) {
         box-sizing: border-box;
-        width: 412px;
-        height: 488px;
         position: absolute;
+        //width: 412px;
+        //height: 507px;
+        //position: absolute;
+        //top: 50%;
+        //left: 50%;
+        //margin: -219.5px 0 0 -206px; /* 439px / 2 & 412px / 2 (height card & width card) */
+    }
+    
+    @include responsive(height) {
+        height: 507px;
         top: 50%;
+        margin-top: -219.5px;
+    }
+    
+    @include responsive(width) {
+        width: 412px;
         left: 50%;
-        margin: -219.5px 0 0 -206px; /* 439 / 2 & 412 / 2 (height card & width card) */
+        margin-left: -206px;
     }
 }
 
@@ -71,7 +84,7 @@ p {
 #card {
     margin: 60px 20px 31px 20px;
     
-    @include responsive(medium-screens) {
+    @include responsive(width-or-height) {
         margin: 0;
         background-color: #fff;
         border: 1px solid $color-border;
@@ -82,7 +95,7 @@ p {
 // Header
 
 header {
-    @include responsive(medium-screens) {
+    @include responsive(width-or-height) {
         padding-top: 60px;
     }
 }
@@ -110,7 +123,7 @@ ul.social {
     width: 100%;
     font-size: 1.125em; /* 18px / 16px */
     
-    @include responsive(medium-screens) {
+    @include responsive(width-or-height) {
         border-top: 1px solid $color-border;
         
         li.social-first a {
@@ -132,7 +145,7 @@ ul.social {
             width: 100%;
             line-height: 50px;
             
-            @include responsive(medium-screens) {
+            @include responsive(width-or-height) {
                 height: 62px;
                 line-height: 62px;
             }
@@ -155,11 +168,11 @@ footer {
         font-size: 0.875em; /* 14px / 16px */
     }
     
-    @include responsive(medium-screens) {
+    @include responsive(width-or-height) {
         border-top: 0;
         
         p {
-            padding: 20px 40px 0 40px;
+            padding: 20px 40px;
         }
     }
 }

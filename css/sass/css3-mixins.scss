@@ -19,15 +19,25 @@
           transition: $property $duration ease;
 }
 
-@mixin responsive($width) {
-    @if $width == wide-screens {
-        @media only screen and (min-width: $width-large) {
-            @content;
+@mixin responsive($dimension) {
+    @if $dimension == width {
+        @media only screen and (min-width: $width-medium) {
+            @content; 
         }
     }
-    @else if $width == medium-screens {
-        @media only screen and (min-width: $width-medium) { 
+    @else if $dimension == height {
+        @media only screen and (min-height: $width-height) {
             @content; 
+        }
+    }
+    @else if $dimension == width-or-height {
+        @media only screen and (min-height: $width-height), only screen and (min-width: $width-medium) {
+            @content; 
+        }
+    }
+    @else if $dimension == width-and-height {
+        @media only screen and (min-height: $width-height) and (min-width: $width-medium) {
+            @content;
         }
     }
 }
