@@ -16,6 +16,7 @@ body {
     color: $color-main;
     text-align: center;
     line-height: 1.75em; /* 28px / 16px */
+    background-color: #fff;
 }
 
 #{$a-tags} {
@@ -36,17 +37,19 @@ p {
         border-bottom-color: $color-link;
     }
     
-    @include responsive(width-or-height) {
+    @include responsive(width) {
         padding: 0 40px 54px 40px;
     }
 }
 
 // Particles
 #particles-js {
-    @include responsive(width-or-height) {
+    @include responsive(width) {
         height: 100%;
         width: 100%;
         position: fixed;
+        top: 0;
+        left: 0;
         background-color: $color-bg;
         z-index: -10;
     }
@@ -54,28 +57,19 @@ p {
 
 // Wrapper
 
-#wrapper { 
-    @include responsive(width-or-height) {
+#wrapper {
+    max-width: 412px;
+    margin: 0 auto;
+    padding-top: 2%;
+    
+    @include responsive(width-and-height) {
         box-sizing: border-box;
-        position: absolute;
-        //width: 412px;
-        //height: 507px;
-        //position: absolute;
-        //top: 50%;
-        //left: 50%;
-        //margin: -219.5px 0 0 -206px; /* 439px / 2 & 412px / 2 (height card & width card) */
-    }
-    
-    @include responsive(height) {
-        height: 507px;
-        top: 50%;
-        margin-top: -219.5px;
-    }
-    
-    @include responsive(width) {
         width: 412px;
+        position: absolute;
+        top: 50%;
         left: 50%;
-        margin-left: -206px;
+        margin: -219.5px 0 0 -206px;
+        padding: 0;
     }
 }
 
@@ -84,7 +78,7 @@ p {
 #card {
     margin: 60px 20px 31px 20px;
     
-    @include responsive(width-or-height) {
+    @include responsive(width) {
         margin: 0;
         background-color: #fff;
         border: 1px solid $color-border;
@@ -95,7 +89,7 @@ p {
 // Header
 
 header {
-    @include responsive(width-or-height) {
+    @include responsive(width) {
         padding-top: 60px;
     }
 }
@@ -123,18 +117,6 @@ ul.social {
     width: 100%;
     font-size: 1.125em; /* 18px / 16px */
     
-    @include responsive(width-or-height) {
-        border-top: 1px solid $color-border;
-        
-        li.social-first a {
-            @include rounded(0, 0, 0, 5px);
-        }
-
-        li.social-last a {
-            @include rounded(0, 0, 5px, 0);
-        }
-    }
-    
     li {
         display: inline-block;
         width: 20%;
@@ -144,8 +126,9 @@ ul.social {
             height: 50px;
             width: 100%;
             line-height: 50px;
+            @include rounded(3px, 3px, 3px, 3px);
             
-            @include responsive(width-or-height) {
+            @include responsive(width) {
                 height: 62px;
                 line-height: 62px;
             }
@@ -154,6 +137,22 @@ ul.social {
         #{$a-tags-hover} {
             color: #fff;
             background-color: $color-link;
+        }
+    }
+    
+    @include responsive(width) {
+        border-top: 1px solid $color-border;
+        
+        li a {
+            @include rounded(0, 0, 0, 0);
+        }
+        
+        li.social-first a {
+            @include rounded(0, 0, 0, 5px);
+        }
+
+        li.social-last a {
+            @include rounded(0, 0, 5px, 0);
         }
     }
 }
@@ -168,7 +167,7 @@ footer {
         font-size: 0.875em; /* 14px / 16px */
     }
     
-    @include responsive(width-or-height) {
+    @include responsive(width) {
         border-top: 0;
         
         p {

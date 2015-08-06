@@ -2311,6 +2311,7 @@ body {
   text-align: center;
   line-height: 1.75em;
   /* 28px / 16px */
+  background-color: #fff;
 }
 
 a, a:link, a:visited, a:focus {
@@ -2332,47 +2333,45 @@ p a, p a:link, p a:visited, p a:focus {
 p a:hover, p a:active {
   border-bottom-color: #39cccc;
 }
-@media only screen and (min-height: 507px), only screen and (min-width: 412px) {
+@media only screen and (min-width: 412px) {
   p {
     padding: 0 40px 54px 40px;
   }
 }
 
-@media only screen and (min-height: 507px), only screen and (min-width: 412px) {
+@media only screen and (min-width: 412px) {
   #particles-js {
     height: 100%;
     width: 100%;
     position: fixed;
+    top: 0;
+    left: 0;
     background-color: #fafafa;
     z-index: -10;
   }
 }
 
-@media only screen and (min-height: 507px), only screen and (min-width: 412px) {
+#wrapper {
+  max-width: 412px;
+  margin: 0 auto;
+  padding-top: 2%;
+}
+@media only screen and (min-height: 507px) and (min-width: 412px) {
   #wrapper {
     box-sizing: border-box;
-    position: absolute;
-  }
-}
-@media only screen and (min-height: 507px) {
-  #wrapper {
-    height: 507px;
-    top: 50%;
-    margin-top: -219.5px;
-  }
-}
-@media only screen and (min-width: 412px) {
-  #wrapper {
     width: 412px;
+    position: absolute;
+    top: 50%;
     left: 50%;
-    margin-left: -206px;
+    margin: -219.5px 0 0 -206px;
+    padding: 0;
   }
 }
 
 #card {
   margin: 60px 20px 31px 20px;
 }
-@media only screen and (min-height: 507px), only screen and (min-width: 412px) {
+@media only screen and (min-width: 412px) {
   #card {
     margin: 0;
     background-color: #fff;
@@ -2383,7 +2382,7 @@ p a:hover, p a:active {
   }
 }
 
-@media only screen and (min-height: 507px), only screen and (min-width: 412px) {
+@media only screen and (min-width: 412px) {
   header {
     padding-top: 60px;
   }
@@ -2415,9 +2414,37 @@ ul.social {
   font-size: 1.125em;
   /* 18px / 16px */
 }
-@media only screen and (min-height: 507px), only screen and (min-width: 412px) {
+ul.social li {
+  display: inline-block;
+  width: 20%;
+}
+ul.social li a {
+  display: inline-block;
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  border-radius: 3px 3px 3px 3px;
+}
+@media only screen and (min-width: 412px) {
+  ul.social li a {
+    height: 62px;
+    line-height: 62px;
+  }
+}
+ul.social li a:hover, ul.social li a:active {
+  color: #fff;
+  background-color: #39cccc;
+}
+@media only screen and (min-width: 412px) {
   ul.social {
     border-top: 1px solid #f0f0f0;
+  }
+  ul.social li a {
+    -webkit-border-radius: 0 0 0 0;
+    -moz-border-radius: 0 0 0 0;
+    border-radius: 0 0 0 0;
   }
   ul.social li.social-first a {
     -webkit-border-radius: 0 0 0 5px;
@@ -2430,26 +2457,6 @@ ul.social {
     border-radius: 0 0 5px 0;
   }
 }
-ul.social li {
-  display: inline-block;
-  width: 20%;
-}
-ul.social li a {
-  display: inline-block;
-  height: 50px;
-  width: 100%;
-  line-height: 50px;
-}
-@media only screen and (min-height: 507px), only screen and (min-width: 412px) {
-  ul.social li a {
-    height: 62px;
-    line-height: 62px;
-  }
-}
-ul.social li a:hover, ul.social li a:active {
-  color: #fff;
-  background-color: #39cccc;
-}
 
 footer {
   border-top: 1px solid #f0f0f0;
@@ -2459,7 +2466,7 @@ footer p {
   font-size: 0.875em;
   /* 14px / 16px */
 }
-@media only screen and (min-height: 507px), only screen and (min-width: 412px) {
+@media only screen and (min-width: 412px) {
   footer {
     border-top: 0;
   }
