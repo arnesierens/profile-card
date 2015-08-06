@@ -33,7 +33,6 @@ table {
   border-spacing: 0;
 }
 
-/*$color-bg-2: #254073;*/
 /* width wrapper */
 /* height wrapper */
 /*!
@@ -2324,7 +2323,7 @@ p {
   padding-bottom: 25px;
 }
 p a, p a:link, p a:visited, p a:focus {
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid #eee;
   -webkit-transition: border-bottom 0.5s ease;
   -moz-transition: border-bottom 0.5s ease;
   -o-transition: border-bottom 0.5s ease;
@@ -2346,7 +2345,7 @@ p a:hover, p a:active {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #fafafa;
+    background-color: #f5f5f5;
     z-index: -10;
   }
 }
@@ -2375,7 +2374,7 @@ p a:hover, p a:active {
   #card {
     margin: 0;
     background-color: #fff;
-    border: 1px solid #f0f0f0;
+    border: 1px solid #eee;
     -webkit-border-radius: 5px 5px 5px 5px;
     -moz-border-radius: 5px 5px 5px 5px;
     border-radius: 5px 5px 5px 5px;
@@ -2439,7 +2438,7 @@ ul.social li a:hover, ul.social li a:active {
 }
 @media only screen and (min-width: 412px) {
   ul.social {
-    border-top: 1px solid #f0f0f0;
+    border-top: 1px solid #eee;
   }
   ul.social li a {
     -webkit-border-radius: 0 0 0 0;
@@ -2459,7 +2458,7 @@ ul.social li a:hover, ul.social li a:active {
 }
 
 footer {
-  border-top: 1px solid #f0f0f0;
+  border-top: 1px solid #eee;
 }
 footer p {
   padding: 25px 20px 54px;
