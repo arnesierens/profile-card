@@ -58,9 +58,9 @@ p {
 // Wrapper
 
 #wrapper {
-    max-width: 375px;
+    max-width: $wrapper-width;
     margin: 0 auto;
-    padding-top: 2%;
+    padding-top: 10px;
     
     @include responsive(width-and-height) {
         box-sizing: border-box;
@@ -68,7 +68,7 @@ p {
         position: absolute;
         top: 50%;
         left: 50%;
-        margin: -219.5px 0 0 -206px;
+        margin: (-($card-height / 2)) 0 0 (-($wrapper-width / 2));
         padding: 0;
     }
 }

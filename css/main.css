@@ -33,8 +33,6 @@ table {
   border-spacing: 0;
 }
 
-/* width wrapper */
-/* height wrapper */
 /*!
  *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2332,13 +2330,13 @@ p a, p a:link, p a:visited, p a:focus {
 p a:hover, p a:active {
   border-bottom-color: #39cccc;
 }
-@media only screen and (min-width: 412px) {
+@media only screen and (min-width: 375px) {
   p {
     padding: 0 40px 54px 40px;
   }
 }
 
-@media only screen and (min-width: 412px) {
+@media only screen and (min-width: 375px) {
   #particles-js {
     height: 100%;
     width: 100%;
@@ -2353,16 +2351,16 @@ p a:hover, p a:active {
 #wrapper {
   max-width: 375px;
   margin: 0 auto;
-  padding-top: 2%;
+  padding-top: 10px;
 }
-@media only screen and (min-height: 507px) and (min-width: 412px) {
+@media only screen and (min-height: 507px) and (min-width: 375px) {
   #wrapper {
     box-sizing: border-box;
     width: 412px;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin: -219.5px 0 0 -206px;
+    margin: -219.5px 0 0 -187.5px;
     padding: 0;
   }
 }
@@ -2370,7 +2368,7 @@ p a:hover, p a:active {
 #card {
   margin: 60px 20px 31px 20px;
 }
-@media only screen and (min-width: 412px) {
+@media only screen and (min-width: 375px) {
   #card {
     margin: 0;
     background-color: #fff;
@@ -2381,7 +2379,7 @@ p a:hover, p a:active {
   }
 }
 
-@media only screen and (min-width: 412px) {
+@media only screen and (min-width: 375px) {
   header {
     padding-top: 60px;
   }
@@ -2426,7 +2424,7 @@ ul.social li a {
   -moz-border-radius: 3px 3px 3px 3px;
   border-radius: 3px 3px 3px 3px;
 }
-@media only screen and (min-width: 412px) {
+@media only screen and (min-width: 375px) {
   ul.social li a {
     height: 62px;
     line-height: 62px;
@@ -2436,7 +2434,7 @@ ul.social li a:hover, ul.social li a:active {
   color: #fff;
   background-color: #39cccc;
 }
-@media only screen and (min-width: 412px) {
+@media only screen and (min-width: 375px) {
   ul.social {
     border-top: 1px solid #eee;
   }
@@ -2465,7 +2463,7 @@ footer p {
   font-size: 0.875em;
   /* 14px / 16px */
 }
-@media only screen and (min-width: 412px) {
+@media only screen and (min-width: 375px) {
   footer {
     border-top: 0;
   }

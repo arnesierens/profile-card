@@ -21,22 +21,22 @@
 
 @mixin responsive($dimension) {
     @if $dimension == width {
-        @media only screen and (min-width: $width-medium) {
+        @media only screen and (min-width: $wrapper-width) {
             @content; 
         }
     }
     @else if $dimension == height {
-        @media only screen and (min-height: $width-height) {
-            @content; 
+        @media only screen and (min-height: $wrapper-height) {
+            @content;
         }
     }
     @else if $dimension == width-or-height {
-        @media only screen and (min-height: $width-height), only screen and (min-width: $width-medium) {
+        @media only screen and (min-height: $wrapper-height), only screen and (min-width: $wrapper-width) {
             @content; 
         }
     }
     @else if $dimension == width-and-height {
-        @media only screen and (min-height: $width-height) and (min-width: $width-medium) {
+        @media only screen and (min-height: $wrapper-height) and (min-width: $wrapper-width) {
             @content;
         }
     }

@@ -14,6 +14,8 @@ $color-bg: #f5f5f5;
 $a-tags: 'a, a:link, a:visited, a:focus';
 $a-tags-hover: 'a:hover, a:active';
 
-// Media queries
-$width-medium: 412px; /* width wrapper */
-$width-height: 507px; /* height wrapper */
+// Dimensions
+$wrapper-width: 375px;
+$wrapper-height: 507px;
+$card-height: 439px;
+
