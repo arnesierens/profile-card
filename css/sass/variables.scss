@@ -8,7 +8,9 @@ $color-main: #181810;
 $color-link: #39cccc;
 $color-border: #eee;
 $color-shadow: #aaa;
-$color-bg: #f5f5f5;
+$color-bg-top: #192d64;
+$color-bg-bottom: #3b5d92;
+$color-bg-text: #9daec8;
 
 // Link tags
 $a-tags: 'a, a:link, a:visited, a:focus';
@@ -17,5 +19,5 @@ $a-tags-hover: 'a:hover, a:active';
 // Dimensions
 $wrapper-width: 375px;
 $wrapper-height: 507px;
-$card-height: 439px;
+$card-height: 437px;
 

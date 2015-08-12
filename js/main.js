@@ -9,7 +9,7 @@ if(document.documentElement.clientWidth > 412) {
                 }
             },
             "color": {
-                "value": "#bbbbbb"
+                "value": "#ffffff"
             },
             "shape": {
                 "type": "circle",
@@ -22,19 +22,19 @@ if(document.documentElement.clientWidth > 412) {
                 "random": false
             },
             "size": {
-                "value": 1,
+                "value": 3,
                 "random": true
             },
             "line_linked": {
-                "enable": true,
+                "enable": false,
                 "distance": 150,
-                "color": "#bbbbbb",
+                "color": "#3b5d92",
                 "opacity": 0.5,
                 "width": 1
             },
             "move": {
                 "enable": true,
-                "speed": 1,
+                "speed": 0.3,
                 "direction": "none",
                 "random": false,
                 "straight": false,

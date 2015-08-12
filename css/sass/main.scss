@@ -50,8 +50,8 @@ p {
         position: fixed;
         top: 0;
         left: 0;
-        background-color: $color-bg;
         z-index: -10;
+        @include linear-gradient($color-bg-top, $color-bg-bottom);
     }
 }
 
@@ -81,7 +81,6 @@ p {
     @include responsive(width) {
         margin: 0;
         background-color: #fff;
-        border: 1px solid $color-border;
         @include rounded(5px, 5px, 5px, 5px);
     }
 }
@@ -169,6 +168,7 @@ footer {
     
     @include responsive(width) {
         border-top: 0;
+        color: $color-bg-text;
         
         p {
             padding: 20px 40px;
