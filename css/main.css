@@ -2387,6 +2387,9 @@ p a:hover, p a:active {
     -webkit-border-radius: 5px 5px 5px 5px;
     -moz-border-radius: 5px 5px 5px 5px;
     border-radius: 5px 5px 5px 5px;
+    -webkit-box-shadow: 0 0 10px 2px #7581A2;
+    -moz-box-shadow: 0 0 10px 2px #7581A2;
+    box-shadow: 0 0 10px 2px #7581A2;
   }
 }
 

@@ -82,6 +82,7 @@ p {
         margin: 0;
         background-color: #fff;
         @include rounded(5px, 5px, 5px, 5px);
+        @include shadow(0, 0, 10px, 2px, $color-card-shadow);
     }
 }
 
