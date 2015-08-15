@@ -2304,7 +2304,7 @@ html {
 
 body {
   font: 300 100% "Lato", Helvetica, Arial, sans-serif;
-  color: #181810;
+  color: #050914;
   text-align: center;
   line-height: 1.75em;
   /* 28px / 16px */
@@ -2417,7 +2417,7 @@ h1 {
   padding: 15px 0 25px 0;
 }
 h1 a, h1 a:link, h1 a:visited, h1 a:focus {
-  color: #181810;
+  color: #050914;
 }
 
 ul.social {
