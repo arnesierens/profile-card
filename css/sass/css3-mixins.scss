@@ -19,6 +19,12 @@
           transition: $property $duration ease;
 }
 
+@mixin transform-scale-3d($x, $y, $z) {
+    -webkit-transform: scale3d($x, $y, $z);
+        -ms-transform: scale3d($x, $y, $z);
+            transform: scale3d($x, $y, $z);
+}
+
 @mixin linear-gradient($from, $to) {
     background: $from;
     background: -moz-linear-gradient(top, $from 0%, $to 100%); /* FF3.6+ */
