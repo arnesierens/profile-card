@@ -1,3 +1,3 @@
 # profile-card
 
-http://profile.sierensarne.be/
+Simple profile card.
